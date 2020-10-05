@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPF_First.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_First"
+        mc:Ignorable="d"
+		WindowStyle="None"
+		Background="{x:Null}"
+		AllowsTransparency="True"
+		Topmost="True"
+        Title="MainWindow" Height="450" Width="800" MouseLeftButtonDown="Window_MouseLeftButtonDown" >
+	<Window.Resources>
+		<Style TargetType="Label">
+			<Setter Property="Foreground" Value="White"></Setter>
+			<Setter Property="HorizontalAlignment" Value="Center"></Setter>
+		</Style>
+	</Window.Resources>
+	<StackPanel>
+		<Label x:Name="Lable_time1" Content="20 40 60" FontSize="40"/>
+		<Label x:Name="Lable_time2" Content="Its My Mpf~" FontFamily="Ink Free" FontSize="60"/>
+		<Label x:Name="Lable_time3" Content="2020  02 12" FontSize="40"/>
+
+
+	</StackPanel>
+</Window>
